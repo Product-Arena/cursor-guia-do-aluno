@@ -1,8 +1,10 @@
-# Student guide (Guia do Aluno) — local preview
+# cursor-guia-do-aluno
+
+Student guide (Guia do Aluno) — **Cursor para PMs** · Product Arena. Static HTML for local preview and **GitHub Pages**.
 
 Static HTML. Always serve over HTTP; opening `index.html` via `file://` breaks assets and some behaviors.
 
-## Quick start
+## Quick start (local)
 
 From this directory:
 
@@ -24,12 +26,11 @@ chmod +x serve-local.sh   # once, if needed
 
 This repo is set up for **static hosting** from the repository root (`index.html` at `/`).
 
-1. Push to [github.com/Product-Arena/cursor-guia-do-aluno](https://github.com/Product-Arena/cursor-guia-do-aluno).
-2. On GitHub: **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose branch **`main`**, folder **`/ (root)`**, then **Save**.
+1. On GitHub: **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Choose branch **`main`**, folder **`/ (root)`**, then **Save**.
 
-After the first deploy (usually within a minute), the site is available at:
+After deploy, the site is typically at:
 
 `https://product-arena.github.io/cursor-guia-do-aluno/`
 
