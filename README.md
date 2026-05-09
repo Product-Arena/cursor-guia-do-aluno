@@ -4,6 +4,25 @@ Student guide (Guia do Aluno) — **Cursor para PMs** · Product Arena. Static H
 
 Static HTML. Always serve over HTTP; opening `index.html` via `file://` breaks assets and some behaviors.
 
+## GitHub Pages (required setup once)
+
+This repository deploys with **GitHub Actions** (not “Deploy from branch”). The workflow copies only the public files (`index.html`, `ementa.html`, `styles.css`, `app.js`, `assets/`) to the site root.
+
+1. Open **Settings** → **Pages** in this repo.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. Push to `main` (or run the workflow manually: **Actions** → **Deploy GitHub Pages** → **Run workflow**).
+4. When the workflow finishes, open the **github-pages** environment URL shown in the run summary.
+
+Typical public URL:
+
+`https://product-arena.github.io/cursor-guia-do-aluno/`
+
+If Pages still shows “Get started”, you must pick **GitHub Actions** as the source; the workflow file is already in `.github/workflows/deploy-github-pages.yml`.
+
+### Org permissions
+
+If workflows fail with permissions errors, an org owner may need to allow **GitHub Actions** and **Pages** for this repository under organization settings.
+
 ## Quick start (local)
 
 From this directory:
@@ -21,20 +40,6 @@ chmod +x serve-local.sh   # once, if needed
 ## Requirements
 
 - Python 3 (uses `python3 -m http.server` bound to `127.0.0.1` only).
-
-## GitHub Pages
-
-This repo is set up for **static hosting** from the repository root (`index.html` at `/`).
-
-1. On GitHub: **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-3. Choose branch **`main`**, folder **`/ (root)`**, then **Save**.
-
-After deploy, the site is typically at:
-
-`https://product-arena.github.io/cursor-guia-do-aluno/`
-
-(Exact URL is shown on the Pages settings screen.)
 
 ## Troubleshooting
 
