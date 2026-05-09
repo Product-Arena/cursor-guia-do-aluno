@@ -505,8 +505,8 @@ Nove blocos temáticos — do workspace aos MCPs, passando por modos (Ask, Plan,
 <header class="block-head">
 <span class="block-pill">B L O C O   0 5</span>
 <h2>Cursor no ciclo de produto</h2>
-<p class="block-quote">Da análise à narrativa e ao planejamento: usar o repositório como “empresa fictícia”, gerar entregáveis e preparar a feature para protótipo.</p>
-<p class="block-obj"><strong>Objetivo:</strong> Contexto da <strong>Arena Cash</strong>, análise de dados, comunicação (slides), workflow <strong>PRD → épicos/tarefas</strong> no Linear. Integrações via <strong>MCP</strong> (Notion e Linear) são detalhadas no <a href="#bloco-6">bloco MCPs</a>.</p>
+<p class="block-quote">Da análise à narrativa e ao planejamento: usar o repositório como “empresa fictícia”, gerar entregáveis e preparar o novo fluxo de onboarding para protótipo.</p>
+<p class="block-obj"><strong>Objetivo:</strong> Contexto da <strong>Arena Cash</strong>, análise de dados, comunicação (slides), workflow <strong>PRD do onboarding → épicos/tarefas</strong> no Linear. Integrações via <strong>MCP</strong> (Notion e Linear) são detalhadas no <a href="#bloco-6">bloco MCPs</a>.</p>
 </header>
 
 <section class="concept">
@@ -533,22 +533,98 @@ Nove blocos temáticos — do workspace aos MCPs, passando por modos (Ask, Plan,
 
 <section class="concept">
 <h3>5.3 Slides (primeira versão — PPTX)</h3>
-<p>Pedir ao Cursor para montar uma <strong>apresentação em PPT</strong> com <strong>6 slides:</strong></p>
-<ol>
-<li>Capa</li>
-<li>Agenda</li>
-<li>Contexto</li>
-<li>Resultado da análise</li>
-<li>Próximos passos</li>
-<li>Agradecimento</li>
-</ol>
+<p>Primeira versão: criar uma apresentação <strong>rápida</strong>, sem se apoiar em Skill nem em template pronto. Objetivo: transformar a análise em narrativa “boa o suficiente”.</p>
 </section>
 
 <section class="concept">
-<h3>5.4 Slides (segunda versão — com Skill)</h3>
-<ul>
-<li><strong>Refazer os slides</strong>, desta vez usando um <strong>Skill</strong> para deixá-los <strong>mais bonitos</strong> (padronização visual / tema).</li>
-</ul>
+<h3>5.4 Slides (segunda versão — com Skill + template)</h3>
+<p>Segunda versão: melhorar design e consistência usando uma <strong>Skill</strong> e um <strong>template em HTML</strong>. Nesta edição, o template escolhido pela turma é o <strong>Coral</strong>.</p>
+</section>
+
+<section class="exercises">
+<p class="ex-zone-intro"><strong>Slides:</strong> explicam o porquê e mostram o “antes/depois”. <strong>Guia:</strong> prompts e sequência para repetir.</p>
+<h3>Exercícios</h3>
+
+<details class="exercise" id="ex-10-slides-rapidos">
+<summary>
+<span class="ex-num">10</span>
+<span class="ex-title">Slides v1 — narrativa rápida (sem skill/template)</span>
+<span class="ex-time">15 min</span>
+</summary>
+<div class="ex-body">
+<div class="ex-deliverable">
+<h4>Entregável</h4>
+<p>Uma primeira versão com <strong>6 slides</strong>: Capa, Agenda, Contexto, Resultado da análise, Próximos passos, Agradecimento.</p>
+</div>
+<div class="step-block">
+<div class="step-block-head">
+<span class="step-block-num">Passo 1</span>
+<span class="step-block-time">5 min</span>
+<h4 class="step-block-title">Pedir a estrutura e o texto</h4>
+</div>
+<div class="step-block-body">
+<p>No chat, use <strong>Ask</strong> (ou Agent se você quiser que ele gere arquivo). Dê contexto da análise (arquivo, pasta ou resumo).</p>
+<div class="prompt-box">
+<div class="prompt-box-head">Prompt</div>
+<p>Com base nesta análise e contexto, escreva o conteúdo de uma apresentação com 6 slides: Capa, Agenda, Contexto, Resultado da análise, Próximos passos e Agradecimento. Use linguagem simples, com bullets curtos e uma mensagem principal por slide.</p>
+</div>
+</div>
+</div>
+<div class="step-block">
+<div class="step-block-head">
+<span class="step-block-num">Passo 2</span>
+<span class="step-block-time">10 min</span>
+<h4 class="step-block-title">Gerar o arquivo de slides (simples)</h4>
+</div>
+<div class="step-block-body">
+<p>Peça ao agente para gerar o arquivo no formato usado na aula (ex.: PPTX). O foco aqui é a narrativa; visual “ok” é suficiente.</p>
+</div>
+</div>
+</div>
+</details>
+
+<details class="exercise" id="ex-11-slides-skill-template-coral">
+<summary>
+<span class="ex-num">11</span>
+<span class="ex-title">Slides v2 — com Skill + template Coral (HTML)</span>
+<span class="ex-time">20 min</span>
+</summary>
+<div class="ex-body">
+<div class="ex-context">
+<p>Agora o foco é <strong>coesão visual</strong> e um deck “apresentável” com menos esforço. Você vai usar uma <strong>Skill</strong> e partir de um template pronto.</p>
+</div>
+<div class="ex-deliverable">
+<h4>Entregável</h4>
+<p>Uma segunda versão dos slides com visual consistente, baseada no template <strong>Coral</strong> da biblioteca <a href="https://github.com/zarazhangrui/beautiful-html-templates" rel="noopener" target="_blank">beautiful-html-templates</a>.</p>
+</div>
+<div class="step-block">
+<div class="step-block-head">
+<span class="step-block-num">Passo 1</span>
+<span class="step-block-time">5 min</span>
+<h4 class="step-block-title">Escolher o template Coral</h4>
+</div>
+<div class="step-block-body">
+<p>Abra a biblioteca e selecione a opção <strong>Coral</strong> (o instrutor mostra na tela como localizar o template e copiar a estrutura).</p>
+<p class="tip"><strong>Referência:</strong> repositório em <code>github.com/zarazhangrui/beautiful-html-templates</code> (template Coral).</p>
+</div>
+</div>
+<div class="step-block">
+<div class="step-block-head">
+<span class="step-block-num">Passo 2</span>
+<span class="step-block-time">15 min</span>
+<h4 class="step-block-title">Refazer usando Skill + template</h4>
+</div>
+<div class="step-block-body">
+<p>No Cursor, peça ao agente para aplicar o template Coral e refazer o conteúdo dos 6 slides. Use a Skill definida na aula para orientar estilo, consistência e qualidade.</p>
+<div class="prompt-box">
+<div class="prompt-box-head">Prompt</div>
+<p>Recrie minha apresentação (6 slides) usando uma Skill de design e o template HTML <strong>Coral</strong> do repositório <code>beautiful-html-templates</code>. Mantenha a mesma narrativa, mas deixe o layout e tipografia mais consistentes. Gere os arquivos finais (HTML/CSS/JS se necessário) em uma pasta <code>slides/</code>.</p>
+</div>
+<p class="tip"><strong>Alternativa:</strong> se preferir, peça primeiro para o agente listar 2–3 templates e justificar por que o Coral foi escolhido; depois aplique o Coral.</p>
+</div>
+</div>
+</div>
+</details>
 </section>
 
 <section class="concept">
@@ -560,21 +636,21 @@ Nove blocos temáticos — do workspace aos MCPs, passando por modos (Ask, Plan,
 </section>
 
 <section class="concept">
-<h3>5.6 Workflow encadeado — PRD e Linear</h3>
+<h3>5.6 Workflow encadeado — onboarding, PRD e Linear</h3>
 <ul>
 <li><strong>Teoria:</strong> o que é um <strong>fluxo encadeado</strong> / <strong>workflow</strong> no dia a dia de PM com agentes.</li>
 </ul>
-<h4>5.6.1 PRD da nova feature</h4>
-<p>A feature é <strong>output da análise anterior</strong>. Exercício: <strong>criar PRD</strong> para essa feature.</p>
-<h4>5.6.2 Épicos e tarefas a partir da PRD</h4>
-<p>Quebrar a PRD em <strong>épicos</strong> e <strong>tarefas</strong>.</p>
+<h4>5.6.1 PRD do novo fluxo de onboarding</h4>
+<p>O novo onboarding é <strong>output da análise anterior</strong>. Exercício: <strong>criar PRD</strong> para esse fluxo.</p>
+<h4>5.6.2 Épicos e tarefas a partir da PRD do onboarding</h4>
+<p>Quebrar a PRD do onboarding em <strong>épicos</strong> e <strong>tarefas</strong>.</p>
 <h4>5.6.3 Ferramenta de gestão — Linear (com alternativas)</h4>
 <ul>
 <li>Apresentar o <strong>Linear</strong>.</li>
 <li>Deixar claro que poderia ser <strong>Jira</strong> ou <strong>qualquer outro</strong> gestor de tarefas.</li>
 </ul>
 <h4>5.6.4 Criar épicos e tarefas no Linear</h4>
-<p>Criar <strong>épicos e tarefas diretamente no Linear</strong>, usando como contexto os <strong>templates de épico e de tarefas</strong> (do curso / repositório). O <strong>MCP do Linear</strong> é configurado no <a href="#bloco-6">bloco MCPs</a>.</p>
+<p>Criar <strong>épicos e tarefas diretamente no Linear</strong>, usando como contexto os <strong>templates de épico e de tarefas</strong> (do curso / repositório) para o novo fluxo de onboarding. O <strong>MCP do Linear</strong> é configurado no <a href="#bloco-6">bloco MCPs</a>.</p>
 </section>
 </article>
 
@@ -615,7 +691,7 @@ Nove blocos temáticos — do workspace aos MCPs, passando por modos (Ask, Plan,
 <span class="block-pill">B L O C O   0 7</span>
 <h2>Construindo protótipos</h2>
 <p class="block-quote">Da primeira versão funcional em localhost ao repositório público — Git, GitHub Pages e, opcionalmente, Vercel.</p>
-<p class="block-obj"><strong>Objetivo:</strong> Construir o protótipo da feature priorizada, versionar e publicar para demonstração.</p>
+<p class="block-obj"><strong>Objetivo:</strong> Construir o protótipo do novo fluxo de onboarding priorizado, versionar e publicar para demonstração.</p>
 </header>
 
 <section class="concept concept--compact">
@@ -635,12 +711,12 @@ Nove blocos temáticos — do workspace aos MCPs, passando por modos (Ask, Plan,
 </summary>
 <div class="ex-body">
 <div class="ex-context">
-<p>Você já tem iniciativa priorizada, narrativa nos slides e caminho no backlog. O problema prático: <strong>mostrar para design e engenharia o que construir</strong> antes de um discovery longo — usando um <strong>protótipo navegável</strong> no Cursor (Agent), em vez de só mock estático.</p>
+<p>Você já tem o onboarding priorizado, narrativa nos slides e caminho no backlog. O problema prático: <strong>mostrar para design e engenharia o que construir</strong> antes de um discovery longo — usando um <strong>protótipo navegável</strong> no Cursor (Agent), em vez de só mock estático.</p>
 <p>Método: estrutura visual (<strong>HTML + CSS</strong>) primeiro, refinando com feedback em português; <strong>JavaScript</strong> por último para interações. Ajustes finos podem ser no editor.</p>
 </div>
 <div class="ex-deliverable">
 <h4>Entregável</h4>
-<p>Pasta <code>06-prototipo/</code> (ou pasta definida no seu projeto do curso) com <code>index.html</code>, <code>style.css</code> e <code>script.js</code>. Objetivo: <strong>3 telas principais</strong> navegáveis alinhadas ao design system da Arena Cash / documentos do workspace.</p>
+<p>Pasta <code>06-prototipo/</code> (ou pasta definida no seu projeto do curso) com <code>index.html</code>, <code>style.css</code> e <code>script.js</code>. Objetivo: <strong>3 telas principais do novo onboarding</strong> navegáveis e alinhadas ao design system da Arena Cash / documentos do workspace.</p>
 </div>
 <div class="step-block">
 <div class="step-block-head">
@@ -652,7 +728,7 @@ Nove blocos temáticos — do workspace aos MCPs, passando por modos (Ask, Plan,
 <p>No workspace do projeto, abra o <strong>Agent</strong>. Referencie os arquivos de briefing e design system do repo (arraste para o chat ou <code>@</code>). Peça uma primeira versão só layout.</p>
 <div class="prompt-box">
 <div class="prompt-box-head">Prompt-base (ajuste nomes de arquivo aos do seu repo)</div>
-<p>Lê <code>[caminho/do/briefing]</code> e <code>[caminho/do/design-system]</code>. Identifique as <strong>3 telas principais</strong> da iniciativa e gere HTML + CSS na pasta <code>06-prototipo/</code> — sem JS ainda. Use tipografia e cores do design system. Depois rode o servidor local indicado pelo projeto e diga qual URL abrir.</p>
+<p>Lê <code>[caminho/do/briefing-onboarding]</code> e <code>[caminho/do/design-system]</code>. Identifique as <strong>3 telas principais do novo onboarding</strong> e gere HTML + CSS na pasta <code>06-prototipo/</code> — sem JS ainda. Use tipografia e cores do design system. Depois rode o servidor local indicado pelo projeto e diga qual URL abrir.</p>
 </div>
 </div>
 </div>
